@@ -1,28 +1,38 @@
 #include <iostream>
 #include "ModulesSemenyuk.h"
+#include <clocale>
+#include <wchar.h>
+#include <windows.h>
+#include <fcntl.h>
 
 using namespace std;
 
 double x = 0, y = 0, z = 0;
 char a, b;
 
+void localisation()
+{
+    _wsetlocale(LC_ALL, L"uk_UA.UTF-8");
+    _setmode(_fileno(stdout), _O_U8TEXT);
+}
+
 void devOutput()
 {
-    cout << "Developer\n"
-         << "Semenyuk Olexandr(c)" << endl;
+    wcout << L"Розробник\n"
+         << L"Семенюк Олександр(c)" << endl;
 }
 
 void userInput()
 {
-    cout << "x: ";
+    wcout << L"x: ";
     cin >> x;
-    cout << "y: ";
+    wcout << L"y: ";
     cin >> y;
-    cout << "z: ";
+    wcout << L"z: ";
     cin >> z;
-    cout << "A: ";
+    wcout << L"A: ";
     cin >> a;
-    cout << "B: ";
+    wcout << L"B: ";
     cin >> b;
 }
 
@@ -30,24 +40,24 @@ void tof_output()
 {
     if (a + 1 > abs(b - 2))
     {
-        cout << "True!" << endl;
+        wcout << L"True!" << endl;
     }
     else
     {
-        cout << "False!" << endl;
+        wcout << L"False!" << endl;
     }
 }
 
-void calcoutput()
+void calcOutput()
 {
-    cout << "Your result: " << calculations_s(x, y, z) << endl;
+    wcout << L"Результат: " << calculations_s(x, y, z) << endl;
 }
 
 void intOutput()
 {
-    cout << "x: " << x << endl;
-    cout << "y: " << y << endl;
-    cout << "z: " << z << endl;
+    wcout << L"x: " << x << endl;
+    wcout << L"y: " << y << endl;
+    wcout << L"z: " << z << endl;
 }
 
 void appPause()
@@ -57,9 +67,10 @@ void appPause()
 
 int main()
 {
+    localisation();
     devOutput();
     userInput();
-    calcoutput();
+    calcOutput();
     tof_output();
     intOutput();
     appPause();

@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1617987274 source:d:\shcode\c++\oleksandr-semeniuk-ki20\lab08\prj\semenyuk_task\main.cpp
+	<iostream>
+	"ModulesSemenyuk.h"
+
