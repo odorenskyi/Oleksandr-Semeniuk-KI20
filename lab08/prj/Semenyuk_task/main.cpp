@@ -24,13 +24,13 @@ void devOutput()
 
 void userInput()
 {
-    while (x == 0 || x == 3)
+    while (x <= 3)
     {
         wcout << L"x: ";
         cin >> x;
-        if (x == 0 || x == 3)
+        if (x <= 3)
         {
-            wcout << L"Помилка! Не можна вводити числа \"0\" та \"3\"" << endl;
+            wcout << L"Помилка! Значення \"x\" повинно бути більшим ніж \"3\"" << endl;
         }
     }
     wcout << L"y: ";
