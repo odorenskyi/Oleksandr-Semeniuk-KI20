@@ -24,8 +24,15 @@ void devOutput()
 
 void userInput()
 {
-    wcout << L"x: ";
-    cin >> x;
+    while (x == 0 || x == 3)
+    {
+        wcout << L"x: ";
+        cin >> x;
+        if (x == 0 || x == 3)
+        {
+            wcout << L"Помилка! Не можна вводити числа \"0\" та \"3\"" << endl;
+        }
+    }
     wcout << L"y: ";
     cin >> y;
     wcout << L"z: ";
