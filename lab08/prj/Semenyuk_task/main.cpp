@@ -4,6 +4,7 @@
 #include <wchar.h>
 #include <windows.h>
 #include <fcntl.h>
+#include <iomanip>
 
 using namespace std;
 
@@ -65,6 +66,9 @@ void intOutput()
     wcout << L"x: " << x << endl;
     wcout << L"y: " << y << endl;
     wcout << L"z: " << z << endl;
+    wcout << L"x(HEX): " << hexfloat << x << endl;
+    wcout << L"y(HEX): " << hexfloat << y << endl;
+    wcout << L"z(HEX): " << hexfloat << z << endl;
 }
 
 void appPause()
