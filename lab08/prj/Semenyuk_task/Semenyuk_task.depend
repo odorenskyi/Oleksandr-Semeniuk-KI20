@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1618248120 source:d:\shcode\c++\oleksandr-semeniuk-ki20\lab08\prj\semenyuk_task\main.cpp
+1618249423 source:d:\shcode\c++\oleksandr-semeniuk-ki20\lab08\prj\semenyuk_task\main.cpp
 	<iostream>
 	"ModulesSemenyuk.h"
 	<clocale>

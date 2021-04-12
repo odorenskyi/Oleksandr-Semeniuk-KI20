@@ -38,10 +38,32 @@ void userInput()
     cin >> y;
     wcout << L"z: ";
     cin >> z;
-    wcout << L"A: ";
-    cin >> a;
-    wcout << L"B: ";
-    cin >> b;
+    while (true)
+    {
+        wcout << L"A: ";
+        cin >> a;
+        if (a == '\0')
+        {
+            wcout << L"Помилка! Введіть літеру." << endl;
+        }
+        else
+        {
+            break;
+        }
+    }
+    while (true)
+    {
+        wcout << L"B: ";
+        cin >> b;
+        if (b == '\0')
+        {
+            wcout << L"Помилка! Введіть літеру." << endl;
+        }
+        else
+        {
+            break;
+        }
+    }
 }
 
 void tof_output()
