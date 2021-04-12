@@ -9,7 +9,7 @@
 using namespace std;
 
 double x = 0, y = 0, z = 0;
-char a, b;
+char a = L'\0', b = L'\0';
 
 void localisation()
 {
@@ -38,32 +38,10 @@ void userInput()
     cin >> y;
     wcout << L"z: ";
     cin >> z;
-    while (true)
-    {
-        wcout << L"A: ";
-        cin >> a;
-        if (a == '\0')
-        {
-            wcout << L"Помилка! Введіть літеру." << endl;
-        }
-        else
-        {
-            break;
-        }
-    }
-    while (true)
-    {
-        wcout << L"B: ";
-        cin >> b;
-        if (b == '\0')
-        {
-            wcout << L"Помилка! Введіть літеру." << endl;
-        }
-        else
-        {
-            break;
-        }
-    }
+    wcout << L"A: ";
+    cin >> a;
+    wcout << L"B: ";
+    cin >> b;
 }
 
 void tof_output()
@@ -88,9 +66,12 @@ void intOutput()
     wcout << L"x: " << x << endl;
     wcout << L"y: " << y << endl;
     wcout << L"z: " << z << endl;
-    wcout << L"x(HEX): " << hexfloat << x << endl;
-    wcout << L"y(HEX): " << hexfloat << y << endl;
-    wcout << L"z(HEX): " << hexfloat << z << endl;
+    x = (int) x;
+    y = (int) y;
+    z = (int) z;
+    wcout << L"x(HEX): " << hex << x << endl;
+    wcout << L"y(HEX): " << hex << y << endl;
+    wcout << L"z(HEX): " << hex << z << endl;
 }
 
 void appPause()
