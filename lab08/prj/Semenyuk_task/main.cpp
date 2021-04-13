@@ -63,15 +63,12 @@ void calcOutput()
 
 void intOutput()
 {
-    wcout << L"x: " << x << endl;
-    wcout << L"y: " << y << endl;
-    wcout << L"z: " << z << endl;
-    x = (int) x;
-    y = (int) y;
-    z = (int) z;
-    wcout << L"x(HEX): " << hex << x << endl;
-    wcout << L"y(HEX): " << hex << y << endl;
-    wcout << L"z(HEX): " << hex << z << endl;
+    cout << L"x: " << x << endl;
+    cout << L"y: " << y << endl;
+    cout << L"z: " << z << endl;
+    cout << L"x(HEX): " << hexfloat << x << endl;
+    cout << L"y(HEX): " << hexfloat << y << endl;
+    cout << L"z(HEX): " << hexfloat << z << endl;
 }
 
 void appPause()
