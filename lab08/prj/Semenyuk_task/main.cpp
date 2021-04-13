@@ -63,12 +63,13 @@ void calcOutput()
 
 void intOutput()
 {
-    cout << L"x: " << x << endl;
-    cout << L"y: " << y << endl;
-    cout << L"z: " << z << endl;
-    cout << L"x(HEX): " << hexfloat << x << endl;
-    cout << L"y(HEX): " << hexfloat << y << endl;
-    cout << L"z(HEX): " << hexfloat << z << endl;
+    cout << "x: " << x << endl;
+    cout << "y: " << y << endl;
+    cout << "z: " << z << endl;
+    int a = (int) x, b = (int) y, c = (int) z;
+    cout << "x(HEX): " << hex << a << endl;
+    cout << "y(HEX): " << hex << b << endl;
+    cout << "z(HEX): " << hex << c << endl;
 }
 
 void appPause()
