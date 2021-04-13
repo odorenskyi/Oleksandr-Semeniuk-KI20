@@ -63,13 +63,13 @@ void calcOutput()
 
 void intOutput()
 {
-    cout << "x: " << x << endl;
-    cout << "y: " << y << endl;
-    cout << "z: " << z << endl;
+    wcout << L"x: " << x << endl;
+    wcout << L"y: " << y << endl;
+    wcout << L"z: " << z << endl;
     int a = (int) x, b = (int) y, c = (int) z;
-    cout << "x(HEX): " << hex << a << endl;
-    cout << "y(HEX): " << hex << b << endl;
-    cout << "z(HEX): " << hex << c << endl;
+    wcout << L"x(HEX): " << hex << a << endl;
+    wcout << L"y(HEX): " << hex << b << endl;
+    wcout << L"z(HEX): " << hex << c << endl;
 }
 
 void appPause()
