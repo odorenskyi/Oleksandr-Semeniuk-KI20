@@ -5,3 +5,12 @@
 1618253826 source:d:\shcode\c++\oleksandr-semeniuk-ki20\lab08\prj\modulessemenyuk\main.cpp
 	<math.h>
 
+1624349888 source:c:\users\user\desktop\bmtp\oleksandr-semeniuk-ki20-main\lab08\prj\modulessemenyuk\main.cpp
+	<iostream>
+	<fstream>
+	<string>
+	<windows.h>
+	<locale.h>
+	<bitset>
+	<math.h>
+
